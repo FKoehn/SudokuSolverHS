@@ -1,4 +1,4 @@
-# SudokuSolverHS
+# SudokuSolverHS (07/2014)
 
 This is a backtrack-sudoku-solver implemented in Haskell.
 
