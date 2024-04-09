@@ -9,7 +9,7 @@ This is a backtrack-sudoku-solver implemented in Haskell.
 
 ## How to use
 
-Sudokus are of the type `List` of `List` of `Maybe Int`. Every line of the sudoku is a `List` of `Maybe Int`. Every free gap is `Nothing` and every composed number a `Just integer-value.
+Sudokus are of the type `List` of `List` of `Maybe Int`. Every line of the sudoku is a `List` of `Maybe Int`. Every free gap is `Nothing` and every composed number a `Just integer`-value.
 
 The `solve Function` takes two values: a sudoku and a strategy.
 
@@ -22,7 +22,7 @@ It contains also a TestSuite with an example-sudoku (testSudoku).
 ### run the solver with getBestNothing-strategy:
 * solveChooseBest testSudoku
 ### if you want to implement a new strategy
-* type: `Sudoku -> Maybe ( Coordinate, [Int])
+* type: `Sudoku -> Maybe ( Coordinate, [Int])`
 * a strategy takes a unsolved sudoku and returns a `Just Coordinate` with a suggested substitutions or `Nothing`
 * the returned `Coordinate` will be substituted next
 * run it with `solve yourStrategy testSudoku`
